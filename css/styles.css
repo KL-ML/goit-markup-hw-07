@@ -459,7 +459,7 @@ img {
 }
 .modal-form__check-box:focus,
 .modal-form__check-box:hover {
-    border: 0.1em solid var(--hover-blue);
+    border: 2px solid var(--hover-blue);
     cursor: pointer;
 }
 .modal-form__check-input:checked+.modal-form__check-box {
