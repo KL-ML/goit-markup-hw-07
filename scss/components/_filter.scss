@@ -1,0 +1,48 @@
+/*Фільтри*/
+.filter {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    &__btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--dark-grey);
+        background-color: var(--team-background);
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+
+        min-width: 45px;
+        min-height: 38px;
+        padding: 6px 22px;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__btn:hover,
+    &__btn:focus {
+        color: var(--hero-h1-white);
+        background-color: var(--hover-blue);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &__item {
+        margin-right: 8px;
+        display: block;
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,38 @@
+/*Особливості*/
+.features {
+    display: flex;
+    /*   flex-wrap: wrap;*/
+    margin-left: -30px;
+    margin-top: -30px;
+
+    &__item {
+            flex-basis: calc(100% / 4 - 30px);
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    &__icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--team-background);
+            border-radius: 4px;
+            height: 120px;
+            margin-bottom: 30px;
+        }
+    &__card-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            margin-bottom: 10px;
+        }
+    &__card-text {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--light-grey);
+        }
+}
+
