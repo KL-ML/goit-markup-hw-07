@@ -61,7 +61,7 @@
 
     &__icon {
             fill: #000000;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: fill  $transitionLinks;
         }
     &:hover &__icon,
     &:focus &__icon {
@@ -112,7 +112,7 @@
             outline: transparent;
             padding-left: 42px;
     
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border-color  $transitionLinks;
         }
     .input:hover,
     .input:focus {
@@ -125,7 +125,7 @@
             left: 12px;
             fill: var(--dark-grey);
     
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: fill  $transitionLinks;
         }
     .input:hover+&__icon,
     .input:focus+&__icon {
@@ -145,7 +145,7 @@
             resize: none;
             outline: transparent;
     
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border-color  $transitionLinks;
         }
     &__check {
             display: flex;
@@ -170,7 +170,7 @@
     
             margin-right: 7px;
     
-            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border  $transitionLinks;
         }
     &__check-box:focus,
     &__check-box:hover {

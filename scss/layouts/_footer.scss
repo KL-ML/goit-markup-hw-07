@@ -68,7 +68,7 @@
     
             padding: 15px 16px;
     
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+            transition: border-color  $transitionLinks
         }
     &__input:hover,
     &__input:focus {

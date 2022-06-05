@@ -9,7 +9,7 @@
 
     border-radius: 50%;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color  $transitionLinks;
 
     &:hover,
     &:focus {
@@ -18,7 +18,7 @@
     &__icon {
         fill: var(--border-grey);
 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill  $transitionLinks;
     }
     &:hover &__icon,
     &:focus &__icon {
