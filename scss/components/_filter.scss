@@ -8,12 +8,8 @@
 
     &__btn {
         font-family: $BodyFont, $Sans-Serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--dark-grey);
+        @include FontStyles(500, 16px, 1.62, center, 0.03em, color: var(--dark-grey), nula);
+
         background-color: var(--team-background);
         cursor: pointer;
         border: none;
@@ -24,8 +20,8 @@
         padding: 6px 22px;
 
         transition: color  $transitionLinks,
-            background-color  $transitionLinks,
-            box-shadow  $transitionLinks;
+                    background-color  $transitionLinks,
+                    box-shadow  $transitionLinks;
     }
 
     &__btn:hover,

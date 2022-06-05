@@ -74,13 +74,7 @@
             margin-bottom: 20px;
         }
     &__title {
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 1.15;
-            text-align: center;
-            letter-spacing: 0.03em;
-    
-            color: var(--dark-grey);
+            @include FontStyles(700, 20px, 1.15, center, 0.03em, var(--dark-grey), nula);
     
             margin-bottom: 12px;
         }
@@ -93,11 +87,7 @@
             margin-bottom: 0px;
         }
     &__text {
-            font-size: 12px;
-            line-height: 1.16;
-            letter-spacing: 0.01em;
-    
-            color: var(--light-grey);
+            @include FontStyles(nula, 12px, 1.16, nula, 0.01em, var(--light-grey), nula);
     
             margin-bottom: 4px;
         }
@@ -107,7 +97,7 @@
     &__input {
             height: 40px;
             width: 100%;
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            border: 1px solid var(--input-border-color);
             border-radius: 4px;
             outline: transparent;
             padding-left: 42px;
@@ -133,30 +123,22 @@
             cursor: pointer;
         }
     &__textarea {
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.01em;
-    
-            color: rgba(117, 117, 117, 0.5);
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            @include FontStyles(nula, 14px, 1.14, nula, 0.01em, var(--textaria-color), nula);
+
+            border: 1px solid var(--input-border-color);
             border-radius: 4px;
     
             padding: 12px 16px;
             resize: none;
             outline: transparent;
     
-            transition: border-color  $transitionLinks;
+            transition: border-color $transitionLinks;
         }
     &__check {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include %flexstyle;
             margin-bottom: 30px;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-    
-            color: var(--light-grey);
+
+            @include FontStyles(nula, 14px, 1.71, nula, 0.03em, var(--light-grey), nula);
         }
     &__check-input {
             position: absolute;

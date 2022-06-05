@@ -21,9 +21,7 @@
 }
 
 .address-group {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include FontStyles(nula, 14px, 1.71, nula, 0.03em, nula, nula);
     font-style: normal;
 
     &__item {
@@ -38,11 +36,7 @@
 }
 
 .group-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @include FontStyles(700, 14px, 1.14, nula, 0.03em, nula, uppercase);
 
     margin-bottom: 20px;
 }
@@ -64,11 +58,11 @@
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
             background-color: inherit;
-            color: rgba(255, 255, 255, 0.6);
+            color: var(--footer-input-color);
     
             padding: 15px 16px;
     
-            transition: border-color  $transitionLinks
+            transition: border-color $transitionLinks
         }
     &__input:hover,
     &__input:focus {

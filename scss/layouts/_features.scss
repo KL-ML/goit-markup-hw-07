@@ -20,19 +20,12 @@
             margin-bottom: 30px;
         }
     &__card-title {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
+            @include FontStyles(700, 14px, 1.14, nula, 0.03em, nula, uppercase);
     
             margin-bottom: 10px;
         }
     &__card-text {
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: var(--light-grey);
+            @include FontStyles(nula, 14px, 1.71, nula, 0.03em, var(--light-grey), nula);
         }
 }
 

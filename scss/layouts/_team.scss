@@ -24,19 +24,13 @@
             padding: 30px 0px;
         }
     &__title {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
-            letter-spacing: 0.03em;
+         @include FontStyles(500, 16px, 1.19, center, 0.03em, nula, nula);
     
             margin-bottom: 10px;
         }
     &__text {
-            line-height: 1.19;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: var(--light-grey);
+            @include FontStyles(nula, nula, 1.19, center, 0.03em, var(--light-grey), nula);
+            
             padding-bottom: 16px;
         }
 }

@@ -2,10 +2,8 @@
 .logo {
     font-family: $LogoFont, $Sans-Serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include FontStyles(700, 26px, 1.19, nula, 0.03em, nula, nula);
+
     text-decoration: none;
     color: inherit;
 

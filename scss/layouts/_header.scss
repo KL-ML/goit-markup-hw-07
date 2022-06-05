@@ -10,10 +10,7 @@
         }
     
     &__item {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
+            @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
     
             margin-right: 50px;
         }
@@ -28,7 +25,7 @@
             padding-top: 32px;
             padding-bottom: 32px;
     
-            transition: color  $transitionLinks;
+            transition: color $transitionLinks;
         }
     
     &__icon {
@@ -54,10 +51,7 @@
     &__item {
             position: relative;
     
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
+            @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
     
             margin-right: 50px;
         }

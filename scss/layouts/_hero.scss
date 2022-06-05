@@ -17,13 +17,7 @@
     padding-bottom: 200px;
 
     &__title {
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 0.06em;
-            color: var(--hero-h1-white);
+            @include FontStyles(900, 44px, 1.36, center, 0.06em, var(--hero-h1-white), uppercase);
     
             display: block;
             margin-bottom: 30px;

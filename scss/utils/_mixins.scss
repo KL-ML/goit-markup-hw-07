@@ -1,12 +1,8 @@
 @mixin button {
     font-family: $BodyFont,
             $Sans-Serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        text-align: center;
-        letter-spacing: 0.06em;
-        color: var(--hero-h1-white);
+        @include FontStyles(700, 16px, 1.88, center, 0.06em, var(--hero-h1-white), nula);
+
         cursor: pointer;
         background-color: var(--hover-blue);
         border: none;
@@ -19,4 +15,13 @@
         display: block;
     
         transition: background-color $transitionLinks;
+}
+@mixin FontStyles($fw, $fs, $lh, $ta, $ls, $c, $tt) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+    letter-spacing: $ls;
+    color: $c;
+    text-transform: $tt;
 }
