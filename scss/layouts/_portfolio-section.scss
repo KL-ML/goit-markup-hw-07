@@ -1,16 +1,22 @@
 /*Портфоліо*/
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+            margin-top: -30px;
+        
     &__item {
             flex-basis: calc(100% / 3 - 30px);
             margin-left: 30px;
             margin-top: 30px;
         }
 }
+.portfolio-section__filter {
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+
+
 /*Картка в портфоліо*/
 .card-link {
     display: block;

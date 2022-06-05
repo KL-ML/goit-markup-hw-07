@@ -8,17 +8,14 @@
             color: var(--light-grey);
             margin-left: auto;
         }
-    
     &__item {
             @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
     
             margin-right: 50px;
         }
-    
     &__item:last-child {
             margin-right: 0px;
         }
-    
     &__link {
             display: flex;
             align-items: center;
@@ -27,12 +24,15 @@
     
             transition: color $transitionLinks;
         }
-    
     &__icon {
             margin-right: 10px;
             fill: currentColor;
         }
+    &__logo {
+            margin-right: 93px;
+        }
 }
+
 
 /* Логотип */
 .header-container {

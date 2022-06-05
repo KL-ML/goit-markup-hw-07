@@ -3,9 +3,6 @@
     display: flex;
     justify-content: center;
 
-    margin-top: 0px;
-    margin-bottom: 50px;
-
     &__btn {
         font-family: $BodyFont, $Sans-Serif;
         @include FontStyles(500, 16px, 1.62, center, 0.03em, color: var(--dark-grey), nula);
