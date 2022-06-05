@@ -1,6 +1,6 @@
 /*Загальні стилі*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $BodyFont, $Sans-Serif;
     color: var(--dark-grey);
 }
 .section {

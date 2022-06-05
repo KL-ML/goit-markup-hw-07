@@ -1,6 +1,6 @@
 @mixin button {
-    font-family: 'Roboto',
-            sans-serif;
+    font-family: $BodyFont,
+            $Sans-Serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
