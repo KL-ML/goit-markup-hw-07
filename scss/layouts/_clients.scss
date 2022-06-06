@@ -7,33 +7,30 @@
     &__item {
             flex-basis: calc((100% - 30 * 6) / 6)
         }
-    
-    &__link {
-            @include %flexstyle;
-    
-            width: 170px;
-            height: 92px;
-    
-            border: 1px solid var(--border-grey);
-            border-radius: 4px;
-    
-            transition: border-color $transitionLinks;
-        }
-    
-    &__link:hover,
-    &__link:focus {
-            border-color: var(--hover-blue);
-        }
-    
-    &__icon {
-            fill: var(--border-grey);
-    
-            transition: fill $transitionLinks;
-        }
-    
-    &__link:hover &__icon,
-    &__link:focus &__icon {
-            fill: var(--hover-blue);
-        }
 }
+.clients__link {
+    @include %flexstyle;
 
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--border-grey);
+    border-radius: 4px;
+
+    transition: border-color $transitionLinks;
+
+    &:hover,
+    &:focus {
+        border-color: var(--hover-blue);
+    }
+}
+.clients__icon {
+    fill: var(--border-grey);
+
+    transition: fill $transitionLinks;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--hover-blue);
+    }
+}

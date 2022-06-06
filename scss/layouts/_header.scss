@@ -8,14 +8,7 @@
             color: var(--light-grey);
             margin-left: auto;
         }
-    &__item {
-            @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
-    
-            margin-right: 50px;
-        }
-    &__item:last-child {
-            margin-right: 0px;
-        }
+
     &__link {
             display: flex;
             align-items: center;
@@ -32,7 +25,15 @@
             margin-right: 93px;
         }
 }
+.header__item {
+    @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
 
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
 
 /* Логотип */
 .header-container {

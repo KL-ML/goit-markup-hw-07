@@ -11,19 +11,20 @@
             margin-top: 30px;
         }
     &__icon-box {
-            @include %flexstyle;
+            @extend %flexstyle;
             background-color: var(--team-background);
             border-radius: 4px;
             height: 120px;
             margin-bottom: 30px;
         }
-    &__card-title {
-            @include FontStyles(700, 14px, 1.14, nula, 0.03em, nula, uppercase);
-    
-            margin-bottom: 10px;
-        }
-    &__card-text {
-            @include FontStyles(nula, 14px, 1.71, nula, 0.03em, var(--light-grey), nula);
-        }
+
+}
+.features__card-title {
+    @include FontStyles(700, 14px, 1.14, nula, 0.03em, nula, uppercase);
+
+    margin-bottom: 10px;
 }
 
+.features__card-text {
+    @include FontStyles(nula, 14px, 1.71, nula, 0.03em, var(--light-grey), nula);
+}
