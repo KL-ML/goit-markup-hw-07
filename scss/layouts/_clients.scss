@@ -9,7 +9,7 @@
         }
 }
 .clients__link {
-    @include %flexstyle;
+    @extend %flexstyle;
 
     width: 170px;
     height: 92px;

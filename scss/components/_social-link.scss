@@ -1,6 +1,16 @@
 /*Посилання на соціальні мережі*/
-.social-link {
-    @include %flexstyle;
+.social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    &__item {
+        flex-basis: calc((100% - 10 * 4) / 4);
+    }
+}
+
+.social__link {
+    @extend %flexstyle;
 
     width: 44px;
     height: 44px;
@@ -13,19 +23,21 @@
     &:focus {
         background-color: var(--hover-blue);
     }
-    &__icon {
+}
+.social__icon {
         fill: var(--border-grey);
 
         transition: fill $transitionLinks;
-    }
-    &:hover &__icon,
-    &:focus &__icon {
-        fill: var(--hero-h1-white);
-    }
-    &--dark {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-    &__icon--white {
+
+.social__link:hover &,
+.social__link:focus & {
         fill: var(--hero-h1-white);
     }
 }
+.social__link--dark {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+.social__icon--white {
+        fill: var(--hero-h1-white);
+    }
+

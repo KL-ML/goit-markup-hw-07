@@ -12,6 +12,13 @@ body {
 
     margin-bottom: 50px;
     }
-    
+    &--no-padding--top {
+            padding-top: 0px;
+        }
+    &--other-background {
+            background-color: var(--team-background);
+        }
+
 }
+
 

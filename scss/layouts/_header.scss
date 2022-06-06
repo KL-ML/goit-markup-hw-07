@@ -2,30 +2,35 @@
 .header {
     border-bottom: 1px solid var(--header-line);
 
-    &__group {
-            display: flex;
-            align-items: center;
-            color: var(--light-grey);
-            margin-left: auto;
-        }
-
-    &__link {
-            display: flex;
-            align-items: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
-    
-            transition: color $transitionLinks;
-        }
-    &__icon {
-            margin-right: 10px;
-            fill: currentColor;
-        }
     &__logo {
             margin-right: 93px;
         }
 }
-.header__item {
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.contacts {
+            display: flex;
+            align-items: center;
+            color: var(--light-grey);
+            margin-left: auto;
+
+        &__link {
+                display: flex;
+                align-items: center;
+                padding-top: 32px;
+                padding-bottom: 32px;
+        
+                transition: color $transitionLinks;
+            }
+        
+        &__icon {
+                margin-right: 10px;
+                fill: currentColor;
+            }
+        }
+.contacts__item {
     @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
 
     margin-right: 50px;
@@ -35,32 +40,13 @@
     }
 }
 
-/* Логотип */
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
 /* верхняя линия */
 .navigation {
 
     &__list {
             display: flex;
             align-items: center;
-        }
-    
-    &__item {
-            position: relative;
-    
-            @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
-    
-            margin-right: 50px;
-        }
-    
-    &__item:last-child {
-            margin-right: 0px;
-        }
-    
+        }    
     &__link {
             display: flex;
             align-items: center;
@@ -86,5 +72,15 @@
     
         }
 }
+.navigation__item {
+    position: relative;
 
+    @include FontStyles(500, 14px, 1.14, nula, 0.02em, nula, nula);
+
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
 

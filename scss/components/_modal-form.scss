@@ -46,7 +46,7 @@
     top: 8px;
     right: 8px;
 
-    @include %flexstyle;
+    @extend %flexstyle;
 
     width: 30px;
     height: 30px;
@@ -58,17 +58,17 @@
     background-color: transparent;
 
     cursor: pointer;
-
-    &__icon {
+}
+.modal-btn__icon {
             fill: #000000;
-            transition: fill  $transitionLinks;
-        }
-    &:hover &__icon,
-    &:focus &__icon {
+            transition: fill $transitionLinks;
+
+    .modal-btn:hover &,
+    .modal-btn:focus & {
             fill: var(--hover-blue);
         }
 }
-/*Форма зворотнього зв'язку в модальному вікні*/
+
 .modal-form {
     &__tumb {
             margin-bottom: 20px;
@@ -77,14 +77,6 @@
             @include FontStyles(700, 20px, 1.15, center, 0.03em, var(--dark-grey), nula);
     
             margin-bottom: 12px;
-        }
-    &__label {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 10px;
-        }
-    &__label:last-child {
-            margin-bottom: 0px;
         }
     &__text {
             @include FontStyles(nula, 12px, 1.16, nula, 0.01em, var(--light-grey), nula);
@@ -104,24 +96,6 @@
     
             transition: border-color  $transitionLinks;
         }
-    .input:hover,
-    .input:focus {
-            border-color: var(--hover-blue);
-            cursor: pointer;
-        }
-    &__icon {
-            position: absolute;
-            top: 11px;
-            left: 12px;
-            fill: var(--dark-grey);
-    
-            transition: fill  $transitionLinks;
-        }
-    .input:hover+&__icon,
-    .input:focus+&__icon {
-            fill: var(--hover-blue);
-            cursor: pointer;
-        }
     &__textarea {
             @include FontStyles(nula, 14px, 1.14, nula, 0.01em, var(--textaria-color), nula);
 
@@ -135,7 +109,7 @@
             transition: border-color $transitionLinks;
         }
     &__check {
-            @include %flexstyle;
+            @extend %flexstyle;
             margin-bottom: 30px;
 
             @include FontStyles(nula, 14px, 1.71, nula, 0.03em, var(--light-grey), nula);
@@ -171,4 +145,32 @@
     &__check-link {
             color: var(--hover-blue);
         }
+}
+.modal-form__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+.input:hover,
+.input:focus {
+            border-color: var(--hover-blue);
+            cursor: pointer;
+}
+.modal-form__icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    fill: var(--dark-grey);
+
+    transition: fill $transitionLinks;
+
+    .input:hover+&,
+    .input:focus+& {
+        fill: var(--hover-blue);
+        cursor: pointer;
+    }
 }
